@@ -1,0 +1,166 @@
+html {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    height: 100%;
+}
+
+h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    margin-top: 30px;
+    font-size:50px;
+    letter-spacing: 0.346em;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    display: inline-block;
+    
+}
+#container {
+    height: 300px;
+    width: 700px;
+    background-color: #f5e4c39a;
+    margin: 50px auto;
+    border: 3px solid  #f69d3c;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.373);
+    border-radius: 15%;
+}
+
+/*label*/
+.label {
+    margin: 0;
+
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#hour-label {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+#min-label {
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+#sec-label {
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+/*times*/
+.time {
+    justify-self: center;
+    align-self: center;
+
+    border: none;
+    background-color: #ffffff00;
+    font-size: 50px;
+    width: 70px;
+    height: 50px;
+}
+
+#hour {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.semicolon {
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+    margin: 0;
+}
+#p1 {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+#minute {
+    grid-area: 2 / 3 / 2 / 4;
+}
+
+#p2 {
+    grid-area: 2 / 3 / 2 / 5;
+}
+
+#sec {
+    grid-area: 2 / 4 / 2 / 5;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    
+    width: 100px;
+    height: 40px;
+
+    font-size: 30px;
+    justify-self: center;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 4;
+    border-radius: 10%;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 5;
+    border-radius: 10%;
+} 
+
+.navbar{
+     width: 98%;
+     height: 15vh;
+     background-color: rgba(255, 0, 0, 0.57);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 7%;
+
+     
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 40px;
+    
+    
+}
+.navbar.mylogo img{
+    position: relative;
+    left: 0;
+}
+.mylogo img{
+    width:100px;
+    margin-left: -500px;
+}
+li a{
+    position: relative;
+    display: block;
+    transition: .5s;
+    font-size: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+
+}
+li a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top:100%;
+    left:0;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+
+}
+li a:hover{
+    color: darkturquoise;
+    border-bottom: 5px solid black;
+
+}
